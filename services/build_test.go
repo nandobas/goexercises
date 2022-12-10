@@ -1,9 +1,10 @@
 package services_test
 
 import (
-	"github.com/stretchr/testify/require"
-	"services/services"
+	"goexercises-app/services"
 	"testing"
+
+	"github.com/stretchr/testify/require"
 )
 
 func TestBuild(t *testing.T) {
@@ -12,4 +13,3 @@ func TestBuild(t *testing.T) {
 	require.Equal(t, "Nando", p.GetName())
 	require.Equal(t, "dev", p.GetPosition())
 }
-
